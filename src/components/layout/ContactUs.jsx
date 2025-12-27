@@ -88,7 +88,7 @@ const ContactUs = () => {
                   <div className="col-12">
                     <textarea
                       className="form-control"
-                      rows="8"
+                      rows="6"
                       placeholder="Message"
                     ></textarea>
                   </div>

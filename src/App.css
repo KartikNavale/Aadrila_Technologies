@@ -166,10 +166,10 @@ body {
 /* CARD CONTAINER — CRITICAL */
 .cards-area {
   position: relative;
-  width: 520px;  
+  width: 520px;
   height: 520px;
   margin-left: auto;
-  margin-right: 40px; 
+  margin-right: 40px;
 }
 
 /* BASE CARD */
@@ -256,7 +256,7 @@ body {
 .our-product-right {
   position: relative;
   z-index: 2;
-  overflow: visible; 
+  overflow: visible;
 }
 
 /* LEFT CONTENT */
@@ -295,9 +295,9 @@ body {
 }
 .circle-bg-right {
   position: absolute;
-  top: -34px;  
-  right: 0px;  
-  z-index: 5;  
+  top: -34px;
+  right: 0px;
+  z-index: 5;
   pointer-events: none;
   height: 650px;
   width: 600px;
@@ -305,9 +305,9 @@ body {
 .circle-bg-left {
   position: absolute;
   /* key*/
-  top: -84px; 
-  left: 0px;  
-  z-index: 5; 
+  top: -84px;
+  left: 0px;
+  z-index: 5;
   pointer-events: none;
   height: 650px;
   width: 600px;
@@ -385,7 +385,7 @@ body {
 /* contact form */
 .contact-form {
   width: 684px !important;
-  height: 480px;
+  height: 448px;
   box-shadow: 0px 0px 20px 0px #0000001f !important;
   position: absolute;
   top: 70px;
@@ -770,14 +770,16 @@ body {
     padding: 14px 0;
   }
   .contact-form {
-    width: 400px !important;
+    /* width: 400px !important; */
+    width: 93% !important;
     height: 581px;
   }
   .contact-section {
     height: 80vh;
   }
   .contact-form {
-    top: 48vh;
+    top: 54vh;
+    height: 530px;
   }
   .custom-footer {
     margin-top: 21vh;
@@ -786,7 +788,8 @@ body {
     font-size: 12px;
   }
   .custom-footer {
-    padding-top: 11vh;
+    padding-top: 16vh;
+    height: 30%;
   }
   /*  */
   .about-card {
@@ -844,12 +847,15 @@ body {
   .custom-main-ind {
     margin-left: 22px !important;
   }
-    .hero-col {
+  .hero-col {
     margin-top: 16%;
   }
   .team-arrows {
     position: relative;
     z-index: 0;
+  }
+  .product-img {
+    max-width: 360px;
   }
 }
 
@@ -911,7 +917,7 @@ body {
     height: 80vh;
   }
   .contact-form {
-    top: 42vh;
+    top: 54vh;
   }
   .custom-footer {
     background: #3e6eb4;
