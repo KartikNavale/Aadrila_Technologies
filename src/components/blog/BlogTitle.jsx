@@ -1,0 +1,32 @@
+ const BlogTitle = ({
+  title,
+  subtitle,
+  showDots = true,
+  compact = false,  
+}) => {
+  return (
+    <section className="products-section">
+      {showDots && (
+        <img src="/vertical-dots.png" alt="" className="dots-bottom2" />
+      )}
+
+      <div className="container">
+        <div
+          className={`row blog-title-head ${
+            compact ? "blog-title-compact" : ""
+          }`}
+        >
+          <div className="col-12 text-center">
+            <h2 className="hero-text">{title}</h2>
+
+            <p className="subtitle hero-text-c my-0 blog-subtitle">
+              {subtitle}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BlogTitle;
