@@ -74,7 +74,7 @@ body {
     rgba(0, 0, 0, 0) 100%
   );
 } */
- .hero-section {
+.hero-section {
   position: relative;
   overflow: hidden;
 
@@ -731,6 +731,10 @@ body {
 
 /* Media Query for Mobile Devices */
 @media only screen and (min-width: 280px) and (max-width: 767px) {
+  [data-aos],
+  [data-aos].aos-animate {
+    transform: translate3d(0, 40px, 0) !important;
+  }
   /* navbar, footer css */
   .nav-logo {
     height: 40px;
