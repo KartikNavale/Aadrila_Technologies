@@ -1,7 +1,7 @@
 const AboutUsHero = () => {
   return (
     <section className="aboutus-hero">
-      <div className="container py-5">
+      <div className="container py-5"  data-aos="fade-up">
         <div className="row justify-content-center mb-5">
           <div className="col-lg-6 col-md-8 col-11">
             <div className="about-card text-center shadow-sm">
@@ -14,7 +14,7 @@ const AboutUsHero = () => {
         </div>
       </div>
 
-      <div className="row g-0 justify-content-start mb-5">
+      <div className="row g-0 justify-content-start mb-5"  data-aos="fade-right">
         <div className="col-12">
           <div className="info-pill d-flex align-items-center">
             <p className="flex-grow-1 mb-0 text-end pe-md-4 info-pill-p">
@@ -36,7 +36,7 @@ const AboutUsHero = () => {
         </div>
       </div>
 
-      <div className="row g-0 justify-content-end ">
+      <div className="row g-0 justify-content-end"  data-aos="fade-right">
         <div className="col-12">
           <div className="info-pill-2 d-flex align-items-center">
             <div className="pill-icon text-center pill-icon-main">

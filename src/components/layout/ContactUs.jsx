@@ -4,7 +4,7 @@ const ContactUs = () => {
       <div className="container">
         <div className="row align-items-start g-4">
           <img className="dots-bottom4" alt="" src="/horizontal-dots.png"></img>
-          <div className="col-lg-5 col-md-12">
+          <div className="col-lg-5 col-md-12" data-aos="fade-right">
             <h2 className="fw-bold mb-3 hero-text">Contact Us</h2>
             <p className="mb-4 hero-text-c contact-p">
               Lorem Ipsum is simply dummy text of the printing and typesetting

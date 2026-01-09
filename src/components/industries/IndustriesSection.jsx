@@ -5,19 +5,27 @@ const IndustriesSection = () => {
     <section className="industries-section">
       <div className="container mx-5 custom-main-ind">
         <div className="row align-items-center ">
-          <div className="col-lg-5 position-relative custom-left">
+          <div
+            className="col-lg-5 position-relative custom-left"
+            data-aos="fade-right"
+          >
             <p className="subtitle hero-text-c">
               AI-driven innovation for growth.
             </p>
             <h2 className="title hero-text">Industries We Empower</h2>
 
-            <img src="/Combined-Shape-Copy.png" alt="" className="circle-bg" />
+            <img
+              src="/Combined-Shape-Copy.png"
+              alt=""
+              data-aos="fade-right"
+              className="circle-bg"
+            />
           </div>
 
           <div className="col-lg-7">
             {/* DESKTOP / TABLET  */}
             <div className="cards-area d-none d-md-block">
-              <div className="card-pos card-1">
+              <div className="card-pos card-1" data-aos="fade-left">
                 <IndustryCard
                   img="/Healthcare_Icon.png"
                   title="Healthcare"
@@ -25,7 +33,7 @@ const IndustriesSection = () => {
                 />
               </div>
 
-              <div className="card-pos card-2">
+              <div className="card-pos card-2" data-aos="fade-down">
                 <IndustryCard
                   img="/Lending_Icon.png"
                   title="Lending"
@@ -33,7 +41,7 @@ const IndustriesSection = () => {
                 />
               </div>
 
-              <div className="card-pos card-3">
+              <div className="card-pos card-3" data-aos="fade-right">
                 <IndustryCard
                   img="/Insurance_Icon.png"
                   title="Insurance"
@@ -41,8 +49,18 @@ const IndustriesSection = () => {
                 />
               </div>
 
-              <img src="/vertical-dots.png" className="dots-top" alt="" />
-              <img src="/horizontal-dots.png" className="dots-bottom" alt="" />
+              <img
+                src="/vertical-dots.png"
+                data-aos="fade-right"
+                className="dots-top"
+                alt=""
+              />
+              <img
+                src="/horizontal-dots.png"
+                data-aos="fade-left"
+                className="dots-bottom"
+                alt=""
+              />
             </div>
 
             {/*MOBILE CAROUSEL*/}

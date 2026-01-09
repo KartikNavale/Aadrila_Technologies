@@ -57,7 +57,7 @@ body {
   color: #ffffff;
 }
 /*  */
-.hero-section {
+/* .hero-section {
   background-image: url("/hero-img.jpg");
   background-size: cover;
   background-position: center;
@@ -73,7 +73,42 @@ body {
     rgba(0, 0, 0, 1) 90%,
     rgba(0, 0, 0, 0) 100%
   );
+} */
+ .hero-section {
+  position: relative;
+  overflow: hidden;
+
+  /* Background image */
+  background-image: url("/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Gradient mask (keep this) */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  /* Anti-blur fixes */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+  isolation: isolate;
 }
+
+/* Prevent sub-pixel blur */
+.hero-section * {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
 .hero-btn {
   border-radius: 160px;
   background: #3e6eb4;
@@ -297,7 +332,7 @@ body {
   position: absolute;
   top: -34px;
   right: 0px;
-  z-index: 5;
+  z-index: -1;
   pointer-events: none;
   height: 650px;
   width: 600px;
@@ -307,7 +342,7 @@ body {
   /* key*/
   top: -84px;
   left: 0px;
-  z-index: 5;
+  z-index: -1;
   pointer-events: none;
   height: 650px;
   width: 600px;
@@ -678,6 +713,21 @@ body {
 .hero-col-temp {
   margin-top: 7%;
 }
+/* Splash Screen */
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.splash-logo {
+  width: 220px;
+  max-width: 70%;
+}
 
 /* Media Query for Mobile Devices */
 @media only screen and (min-width: 280px) and (max-width: 767px) {
@@ -917,7 +967,7 @@ body {
     height: 80vh;
   }
   .contact-form {
-    top: 54vh;
+    top: 47vh;
   }
   .custom-footer {
     background: #3e6eb4;

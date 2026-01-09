@@ -11,13 +11,20 @@ const OurProductLeft = ({
         src="/Combined-Shape-left.png"
         alt="circle-bg"
         className="circle-bg-left"
+        data-aos="fade-right"
       />
       <div className="container">
         <div className="row align-items-center my-5 left-product">
-          <div className="col-lg-6 col-md-6 col-12 text-center order-2 order-md-1">
+          <div
+            className="col-lg-6 col-md-6 col-12 text-center order-2 order-md-1"
+            data-aos="fade-right"
+          >
             <img src={image} alt="Product Visual" className="product-img" />
           </div>
-          <div className="col-lg-6 col-md-6 col-12 powered-doc ps-4 order-1 order-md-2">
+          <div
+            className="col-lg-6 col-md-6 col-12 powered-doc ps-4 order-1 order-md-2"
+            data-aos="fade-left"
+          >
             <span className="badge-product">{badge}</span>
 
             <h2 className="left-title">{title}</h2>

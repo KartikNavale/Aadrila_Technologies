@@ -40,13 +40,14 @@ const OurTeam = () => {
   };
 
   return (
-    <section className="team-section text-center position-relative">
+    <section className="team-section text-center position-relative"  data-aos="fade-up">
       <img
         alt="circle-bg"
         className="circle-bg-left-team"
         src="/Combined-Shape-left.png"
+         data-aos="fade-left"
       />
-      <img alt="" className="dots-bottom6" src="/vertical-dots.png" />
+      <img alt=""  data-aos="fade-left" className="dots-bottom6" src="/vertical-dots.png" />
       <div className="team-arrows">
         <button onClick={goPrev}>
           <img src="/Left arrow.png" alt="" />

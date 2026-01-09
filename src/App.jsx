@@ -1,5 +1,7 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 import RootLayout from "./RootLayout";
 import Home from "./pages/home";
 import About from "./pages/about";
@@ -7,6 +9,7 @@ import Industries from "./pages/industries";
 import Products from "./pages/products";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
+import SplashScreen from "./components/common/SplashScreen";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,20 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <SplashScreen />;
+  }
+
   return <RouterProvider router={router} />;
 }
 

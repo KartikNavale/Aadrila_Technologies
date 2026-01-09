@@ -9,7 +9,7 @@ const OurProductRight = ({
     <section className="our-product-right position-relative">
       <div className="container">
         <div className="row align-items-center my-5">
-          <div className="col-lg-6 col-md-6 col-12 powered-doc ps-4">
+          <div className="col-lg-6 col-md-6 col-12 powered-doc ps-4" data-aos="fade-right">
             <span className="badge-product">{badge}</span>
 
             <h2 className="left-title">{title}</h2>
@@ -36,8 +36,8 @@ const OurProductRight = ({
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-6 col-12 text-center">
-            <img src={image} alt="Product Visual" className="product-img" />
+          <div className="col-lg-6 col-md-6 col-12 text-center" data-aos="fade-left">
+            <img src={image} alt="Product Visual"  className="product-img" />
           </div>
         </div>
       </div>
@@ -46,6 +46,7 @@ const OurProductRight = ({
         src="/Combined-Shape-right.png"
         alt="circle-bg"
         className="circle-bg-right"
+        data-aos="fade-left"
       />
     </section>
   );

@@ -1,16 +1,16 @@
- const BlogTitle = ({
-  title,
-  subtitle,
-  showDots = true,
-  compact = false,  
-}) => {
+const BlogTitle = ({ title, subtitle, showDots = true, compact = false }) => {
   return (
     <section className="products-section">
       {showDots && (
-        <img src="/vertical-dots.png" alt="" className="dots-bottom2" />
+        <img
+          src="/vertical-dots.png"
+          data-aos="fade-right"
+          alt=""
+          className="dots-bottom2"
+        />
       )}
 
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div
           className={`row blog-title-head ${
             compact ? "blog-title-compact" : ""

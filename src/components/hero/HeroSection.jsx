@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="container-fluid">
         <div className="row min-vh-100 align-items-center hero-custom">
          
-          <div className="col-lg-6 hero-col">
+          <div className="col-lg-6 hero-col" data-aos="fade-right">
             <h6 className="hero-text hero-text-c">AI-Powered</h6>
 
             <h1 className="hero-text">
@@ -27,7 +27,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-lg-6" data-aos="fade-left">
      <DocumentCarousel/>
           </div>
         </div>
