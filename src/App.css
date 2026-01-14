@@ -14,6 +14,26 @@ body {
   margin: 0;
   padding: 0;
 }
+/*  reading progress bar */
+.reading-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  z-index: 9999;
+}
+
+.reading-progress-bar {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #4f46e5, #3e6eb4);
+  transform-origin: left;
+  transform: scaleX(0);
+  will-change: transform;
+}
+
 /* navbar, footer css */
 .custom-nav {
   background: rgba(255, 255, 255, 0.25);

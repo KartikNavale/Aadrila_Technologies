@@ -6,10 +6,15 @@ import OurProductLeft from "../components/products/OurProductLeft";
 import BlogTitle from "../components/blog/BlogTitle";
 import BlogCarousel from "../components/blog/BlogCarousel";
 import ContactUs from "../components/layout/ContactUs";
+import useReadingProgress from "../hooks/useReadingProgress";
 
 const Home = () => {
+  const progressRef = useReadingProgress();
   return (
     <>
+      <div className="reading-progress-container">
+        <div ref={progressRef} className="reading-progress-bar" />
+      </div>
       <HeroSection />
       <IndustriesSection />
       <OurProductsTitle />
