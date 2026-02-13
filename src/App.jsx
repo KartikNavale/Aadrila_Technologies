@@ -1,15 +1,15 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { useEffect, useState } from "react";
+import {lazy, Suspense, useEffect, useState } from "react";
 
 import RootLayout from "./RootLayout";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Industries from "./pages/industries";
-import Products from "./pages/products";
-import Blog from "./pages/blog";
-import Contact from "./pages/contact";
-import SplashScreen from "./components/common/SplashScreen";
+const Home = lazy(() => import("./pages/home"));
+const About = lazy(() => import("./pages/about"));
+const Industries = lazy(() => import("./pages/industries"));
+const Products = lazy(() => import("./pages/products"));
+const Blog = lazy(() => import("./pages/blog"));
+const Contact = lazy(() => import("./pages/contact"));
+const SplashScreen = lazy(() => import("./components/common/SplashScreen"));
 
 const router = createBrowserRouter([
   {
@@ -41,7 +41,11 @@ function App() {
     return <SplashScreen />;
   }
 
-  return <RouterProvider router={router} />;
+  
+  return (<Suspense fallback={<SplashScreen />}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }
 
 export default App;
